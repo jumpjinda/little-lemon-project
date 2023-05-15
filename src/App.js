@@ -1,18 +1,17 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Main from './components/Main';
-import logo from './images/Logo.svg';
-import Navbar from './components/Navbar';
+import Homepage from './pages/Homepage';
+import OrderPage from './pages/OrderPage';
+import { Route, Routes, Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/order-page' element={<OrderPage />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

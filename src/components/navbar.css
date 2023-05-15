@@ -1,14 +1,24 @@
+* {
+  margin: 0;
+}
+
 .burger-menu {
   cursor: pointer;
+}
+
+.burger-menu img {
+  position: relative;
+  left: 10px;
+  top: 3px;
 }
 
 .menu {
   width: 214px;
   height: auto;
   background-color: rgb(255, 255, 255);
-  position: absolute;
+  position: fixed;
   top: 65px;
-  left: 99px;
+  margin-left: 2px;
   box-shadow: 1px 1px 5px 2px gray;
   border-radius: 5px;
 }
@@ -20,9 +30,10 @@
 }
 
 /* ---------------- */
+
 .navUl {
   list-style-type: none;
-  padding-left: 35px;
+  padding-left: 15px;
   padding-bottom: 15px;
 }
 

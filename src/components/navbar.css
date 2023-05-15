@@ -1,0 +1,31 @@
+.burger-menu {
+  cursor: pointer;
+}
+
+.menu {
+  width: 214px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 65px;
+  left: 99px;
+  box-shadow: 1px 1px 5px 2px gray;
+  border-radius: 5px;
+}
+
+/* slide bar manager */
+
+.hidden {
+  display: none;
+}
+
+/* ---------------- */
+.navUl {
+  list-style-type: none;
+  padding-left: 35px;
+  padding-bottom: 15px;
+}
+
+.navUl li {
+  padding-top: 15px;
+}

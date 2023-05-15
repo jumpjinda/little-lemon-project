@@ -1,9 +1,16 @@
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import logo from './images/Logo.svg';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      For first commit
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }

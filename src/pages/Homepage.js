@@ -5,13 +5,13 @@ import food from '../images/restauranfood.jpg';
 import salad from '../images/greek salad.jpg';
 import bruchetta from '../images/bruchetta.svg';
 import dessert from '../images/lemon dessert.jpg';
-import './homepage.css';
+import './pages.css';
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { } from '@fortawesome/free-brands-svg-icons';
-import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
+import { } from '@fortawesome/free-regular-svg-icons';
 import { faTruckRampBox } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -23,7 +23,7 @@ function Homepage() {
       <Header />
 
       <main className='main'>
-        <section className='hero'>
+        <section className='hero-homepage'>
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <div className='middle-hero'>

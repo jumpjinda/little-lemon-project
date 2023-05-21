@@ -1,0 +1,24 @@
+form {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+form input, form select {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.reserve-btn {
+  margin-top: 20px;
+  border: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.reserve-btn:hover {
+  background-color: #495e57;
+  color: #f4ce14;
+}

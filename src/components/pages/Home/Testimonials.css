@@ -1,0 +1,28 @@
+.testimonials {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  background-color: #495E57;
+  padding: 2rem 2rem 5rem 2rem;
+}
+
+.testimonials h2 {
+  margin-bottom: 1.875rem;
+  color: #FFFFFF;
+}
+
+.testimonials-grid {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1%;
+  row-gap: 1%;
+  justify-items: center;
+}
+
+/*-- Media queries ------------------------------------------------------*/
+
+@media (max-width: 960px) {
+  .testimonials-grid {
+    grid-template-columns: auto;
+  }
+}

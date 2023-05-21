@@ -1,16 +1,29 @@
-import './App.css';
-import Homepage from './pages/Homepage';
-import Reservation from './pages/Reservation';
 import { Route, Routes } from 'react-router-dom';
+import pages from './utils/pages';
+import Layout from './components/layout/Layout';
+import Home from './components/pages/Home';
+import Bookings from './components/pages/Booking';
+import ConfirmedBooking from './components/pages/Booking/ConfirmedBooking';
+import NotFound from './components/pages/NotFound';
+import UnderConstruction from './components/pages/UnderConstruction';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/reservation' element={<Reservation />} />
-      </Routes>
-    </div>
+    <>
+      <Layout>
+        <Routes>
+          <Route path={pages.get('home').path} element={<Home />} />
+          <Route path={pages.get('about').path} element={<UnderConstruction />} />
+          <Route path={pages.get('menu').path} element={<UnderConstruction />} />
+          <Route path={pages.get('bookings').path} element={<Bookings />} />
+          <Route path={pages.get('confirmedBooking').path} element={<ConfirmedBooking />} />
+          <Route path={pages.get('orderOnline').path} element={<UnderConstruction />} />
+          <Route path={pages.get('login').path} element={<UnderConstruction />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </>
   );
 };
 

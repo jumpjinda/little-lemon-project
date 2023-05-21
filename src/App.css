@@ -5,15 +5,3 @@
   box-sizing: border-box;
   font-family: 'Karla', sans-serif;
 }
-
-.App {
-  max-width: 428px;
-  max-height: 926px;
-  margin: 0 auto;
-  /* border: 1px solid #000000; */
-}
-
-a, a:visited {
-  text-decoration: none;
-  color: #000000;
-}

@@ -1,0 +1,30 @@
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  max-width: 300px;
+}
+
+.testimonial-card img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+}
+
+.testimonial-card h4 {
+  margin: 0 auto 1rem auto;
+}
+
+.testimonial-card span {
+  color: #F4CE14;
+}
+
+/*-- Media queries ------------------------------------------------------*/
+
+@media (max-width: 960px) {
+  .testimonial-card {}
+}
